@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>REVN Analytics</title>
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/lib/css/graphstyle.css">
+    <link rel="stylesheet" href="static/lib/css/jquery-ui.css">
+</head>
+<body ng-app="myApp" ng-controller="revnCtrl" >
+
+ <ng-view></ng-view>
+</body>
+<script src="static/lib/js/jquery.js"></script>
+<script src="static/lib/js/angular.min.js"></script>
+<script src="static/lib/js/d3.min.js"></script>
+ 
+<script src="static/lib/js/bootstrap.min.js"></script>
+<!--<script type="text/javascript" src = "static/lib/models.js"></script>-->
+<script type="text/javascript" src="static/lib/router.js"></script>
+<script type="text/javascript" src="static/lib/controllers.js"></script>
+<script type="text/javascript" src="static/lib/linechart.js"></script>
+<!--<script type="text/javascript" src="static/lib/linecharts.js"></script>-->
+
+<script type="text/javascript">
+     var objAjax = [];
+	var customertest = 1;
+    var floor_lgf_wing = ["LGF_LOC1", "LGF_LOC2", "LGF_LOC3", "LGF_LOC4", "LGF_LOC5", "LGF_LOC6", "LGF_LOC7", "LGF_LOC8", "LGF_LOC9"];
+    var floor_lgf_sensor_id= ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
+    var floor_lgf_func = ["BLE", "AP", "BLE", "AP", "AP", "BLE", "BLE", "BLE", "AP"];
+
+    var floor_1_wing = ['North_West_1', 'Agora_North', 'North_West_2', 'North_West_3', 'EPABX_Lab', 'Left_AHU_Room', 'South_1', 'South_2', 'Sennheiser_Lab', 'Agora_East', 'Agora_North12', 'Right_AHU_Room'];
+    var floor_1_sensor_id= ['100d', '100c', '100b', '100a', '1009', '1008', '1007', '1006', '1005', '1004', '1003', '1002'];
+    var floor_1_func = ["T_H", "CO2", "T_H", "T_H", "T", "T", "T", "T_H", "T_H", "T_H", "T_H", "T_H"];
+
+    var floor_2_wing = ['Agora_East', 'Agora_North', 'Left_AHU', 'Symantec_Lab', 'South_1', 'Right_Switch_Room', 'Right_AHU', 'South_2'];
+    var floor_2_sensor_id= ['200c', '2002', '2003', '2006', '2007', '2004', '2005', '2008'];
+    var floor_2_func = ['CO2', 'T_H', 'T_H', 'T_H', 'T', 'T_H', 'T_H', 'T'];
+
+    var floor_3_wing = ['SC_North_East', 'North_East', 'Right_AHU', 'South', 'Right_Switch_Room', 'Left_AHU', 'North'];
+    var floor_3_sensor_id= ['300c', '3005', '3004', '3007', '3001', '3003', '3002'];
+    var floor_3_func = ['CO2', 'T_H', 'T_H', 'T_H', 'T', 'T_H', 'T_H'];
+
+    var floor_4_wing = ['Right_Switch_Room', 'Right_AHU', 'Left_AHU', 'South', 'North_East', 'North', 'SC_North_West'];
+    var floor_4_sensor_id= ['4001', '4002', '4003', '4004', '4005', '4006', '4006', '400c'];
+    var floor_4_func = ['T_H', 'T_H', 'T_H', 'T_H', 'T_H', 'T_H', 'T_H', 'CO2'];
+</script>
+<script src="static/lib/js/jquery-ui.js"></script>
+<script>
+	screen_width = $(document).width();
+</script>
+</html>

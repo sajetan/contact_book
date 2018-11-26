@@ -1,6 +1,6 @@
 A simple Flask contact book app.
 
-Deployed on Heroku - [Demo](basic-contact-app.herokuapp.com)
+Deployed on Heroku - [Demo](https://basic-contact-app.herokuapp.com)
 
 ## Install
 
